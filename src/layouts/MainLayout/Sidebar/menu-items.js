@@ -1,60 +1,91 @@
-const menuItems = [
-	{
-		id: "1",
-		type: "group",
-		title: "Tutorial",
-		count: 9,
-		children: [
-			{
-				id: "1-1",
-				type: "item",
-				title: "Overview",
-			},
-			{
-				id: "1-2",
-				type: "item",
-				title: "0. Set Up Your Development",
-			},
-			{
-				id: "1-3",
-				type: "item",
-				title: "1. Create and Deploy Your",
-			},
-			{
-				id: "1-4",
-				type: "item",
-				title: "2. Use and Style React",
-			},
-		],
-	},
-	{
-		id: "2",
-		type: "group",
-		title: "How-to Guides",
-		count: 39,
-		children: [
-			{
-				id: "2-1",
-				type: "item",
-				title: "Overview",
-			},
-			{
-				id: "2-2",
-				type: "item",
-				title: "Local Development",
-			},
-			{
-				id: "2-3",
-				type: "item",
-				title: "Routing",
-			},
-			{
-				id: "2-4",
-				type: "item",
-				title: "Styling",
-			},
-		],
-	},
-];
+// assets
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import AssessmentIcon from '@mui/icons-material/Assessment';
+import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
+
+// constant
+const icons = {
+    DashboardIcon,
+    AssessmentIcon, LocalGroceryStoreIcon
+};
+
+const menuItems = {
+    items: [
+        //     {
+        //     id: 'dashboard',
+        //     title: "dashboard",
+        //     type: 'group',
+        //     children: [
+        //         {
+        //             id: 'default',
+        //             title: "default",
+        //             type: 'item',
+        //             url: '/articles',
+        //             icon: icons.DashboardIcon,
+        //             breadcrumbs: false
+        //         },
+        //         {
+        //             id: 'analytics',
+        //             title: "analytics",
+        //             type: 'item',
+        //             url: '/articles',
+        //             icon: icons.AssessmentIcon,
+        //             breadcrumbs: false
+        //         }
+        //     ]
+        // },
+        {
+            id: 'application',
+            title: "application",
+            type: 'group',
+            children: [
+                {
+                    id: 'CUSTOMER',
+                    title: "CUSTOMER",
+                    type: 'collapse',
+                    icon: icons.LocalGroceryStoreIcon,
+                    children: [
+                        {
+                            id: 'customer-list',
+                            title: "customer-list",
+                            type: 'item',
+                            url: '/articles',
+                            breadcrumbs: false
+                        },
+                        {
+                            id: 'order-list',
+                            title: "order-list",
+                            type: 'item',
+                            url: '/articles',
+                            breadcrumbs: false
+                        },
+
+                    ]
+                }, {
+                    id: 'TEST',
+                    title: "TEST",
+                    type: 'collapse',
+                    icon: icons.LocalGroceryStoreIcon,
+                    children: [
+                        {
+                            id: 'test1',
+                            title: "test1",
+                            type: 'item',
+                            url: '/articles',
+                            breadcrumbs: false
+                        },
+                        {
+                            id: 'test2',
+                            title: "test2",
+                            type: 'item',
+                            url: '/articles',
+                            breadcrumbs: false
+                        },
+
+                    ]
+                }
+            ]
+        }]
+};
 
 export default menuItems;

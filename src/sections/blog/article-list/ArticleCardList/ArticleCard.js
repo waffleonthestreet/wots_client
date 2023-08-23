@@ -20,9 +20,9 @@ const ArticleCard = () => {
                         lg: "40%",
                         xl: "40%",
                     },
-                    height: "225px",
+                    height: "260px",
                     border: `1px solid ${lineColor}`,
-                    backgroundImage: "url('https://picsum.photos/400')",
+                    backgroundImage: "url('https://picsum.photos/500/400')",
                     // backgroundRepeat: "no-repeat",
                 }}></Box>
             <Box
@@ -34,27 +34,30 @@ const ArticleCard = () => {
                         lg: "60%",
                         xl: "60%",
                     },
-                    height: "225px",
+                    height: "260px",
                     border: `1px solid ${lineColor}`,
                 }}>
-                <Stack spacing={1} sx={{p: 3}} justifyContent="space-between">
-                    <Typography
-                        level="h4"
-                        fontWeight={400}>
-                        블로그 제목을 뭘로 할까나
-                    </Typography>
-                    <Box sx={{height: "100px"}}>
-                        <Typography level="body-md" sx={{fontFamily: "inherit"}}>
+                <Stack spacing={1} sx={{p: 3}}
+                       direction="column"
+                       justifyContent="space-between">
+                    <Box sx={{height: '180px'}}>
+                        <Typography
+                            level="h4">
+                            블로그 제목을 뭘로 할까나
+                        </Typography>
+                        <Typography level="body-md">
+                            블로그 내용 이라네. 블로그 내용 이라네. 블로그 내용 이라네. 블로그
+                            내용 이라네. 블로그 내용 이라네. 블로그 내용 이라네. 블로그 내용
                             블로그 내용 이라네. 블로그 내용 이라네. 블로그 내용 이라네. 블로그
                             내용 이라네. 블로그 내용 이라네. 블로그 내용 이라네. 블로그 내용
                         </Typography>
                     </Box>
-                    <Box sx={{flexGrow: 1}}/>
-                    <Stack direction="row" spacing={1}>
-                        <Typography level="body-sm" sx={{fontFamily: "inherit"}}>
+                    <Box>
+                        <Typography level="body-sm">
                             길거리와플 ∙ 2023.08.20
                         </Typography>
-                    </Stack>
+                    </Box>
+
                 </Stack>
             </Box>
         </Stack>

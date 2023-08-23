@@ -27,12 +27,17 @@
     "@mui/icons-material": "^5.14.3",
     "@mui/joy": "^5.0.0-beta.2",
     "@mui/material": "^5.14.5",
+    "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.4.0",
     "css-loader": "^6.8.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-redux": "^8.1.2",
     "react-router-dom": "^6.15.0",
+    "redux": "^4.2.1",
+    "redux-persist": "^6.0.0",
     "style-loader": "^3.3.3"
   }
 }
